@@ -1,0 +1,86 @@
+/* Header Section Details  */
+.text-primary {
+    color: #2a535a;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    align-items: center;
+    margin: 0 50px 0 50px;
+}
+
+.nav-title {
+    color: #1A282E;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+
+.nav-menu {
+    color: #1A282E;
+    font-size: 20px;
+}
+
+.nav-menu:hover {
+    background-color: #2a535a;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+nav>ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.banner {
+    background-image: linear-gradient(to bottom, rgba(19, 19, 24, 1), rgba(19, 19, 24, 0)), url('./Images/Group-13.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1170px;
+    height: 500px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    margin: 0px auto;
+    display: flexbox;
+}
+
+.banner-text {
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+}
+
+.banner-title {
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.banner-sub-title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.input-items {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 16px;
+    gap: 24px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+}
