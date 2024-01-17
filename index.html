@@ -1,42 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventurous Backpacker</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap')
+    </style>
+    <title>Adventurous Backpacker - Change Your Tour Experience</title>
+    <link rel="shortcut icon" href="Images/AB Logo.png" type="image/ab-icon">
     <link rel="stylesheet" href="sytle.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/9c982211e3.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <h3 class="nav-title"><span class="text-primary">A</span>dventurous <span class="text-primary">B</span>ackpacker</h3>
-            <ul>
-                <li class="nav-menu">Home</li>
-                <li class="nav-menu">Packages</li>
-                <li class="nav-menu">Testimonial</li>
-                <li class="nav-menu">Blog</li>
-                <li class="nav-menu">Contact</li>
-                
-            </ul>
-        </nav>
-
-        <div class="banner">
-            <div class="banner-text">
-                <h1 class="banner-title">Explore the World with <br> Adventurous Backpacker</h1>
-                <p class="banner-sub-title">Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. Inet odioenim ac quis sapien urna eu phasellus.</p>
+    <header class="header">
+        <div class="container flex-between-center mt-2 mb-2">
+            <div class="logo flex-between-center">
+                <img class="header-logo" src="Images/AB Logo.png" alt="logo">
+                <h3 class="fw-800 f-2-2 flex"><span class="primary-color">A</span>dventurous <span class="primary-color">B</span>ackpacker</h3>
             </div>
-            <div class="input-items">
-                <input type="text" placeholder="Where Go" name="Where Go" id="">
-                <input type="text" placeholder="When" name="When" id="">
-                <input type="text" placeholder="Seclet Type" name="Seclet Type" id="">
-                <button class="findout-btn">Find Now</button>
+            <div class="mobile-nav">
+                <i class="fa-solid fa-bars"></i>
             </div>
+            <nav>
+                <ul class="flex-between-center fw-400 f-1-1">
+                    <li><a href="#"><span class="primary-color fw-700">Home</span></a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Testimonial</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
 
+        <div class="container">
+            <div class="banner text-center">
+                <img src="Images/Group-13.png" alt="">
+                <di v class="banner-layer">
+                    <div class="banner-content text-white">
+                        <h1 class="f-4 fw-800">Explore the World with Adventurous Backpacker</h1>
+                        <p class="f-1 banner-des">Embark on exciting journeys, discover new cultures, and create unforgettable memories as you explore the world. Unleash your wanderlust!</p>
+                        <div class="find-now">
+                            <div class="find-now-layer">
+                                <input type="text" placeholder="Where go">
+                                <select name="" id="">
+                                    <option value="When">When</option>
+                                </select>
+                                <select name="" id="">
+                                    <option value="Select Type">Select Type</option>
+                                </select>
+                                <button class="btn-primary"><i class="fa-solid fa-magnifying-glass"></i> Find
+                                    New</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
         </div>
     </header>
 
     <Main>
+        <section class="popular-tour flex-between-center mt-4">
+            <div class="tour-content">
+                <h3 class="text-black f-2-5 fw-800 mb-1-5 ">Our Popular Tours</h3>
+                <p class="f-1 fw-400 lh-1-6 text-black-p mb-1-5">Discover the allure of our popular tour, a gateway to adventure and cultural immersion. Join us on an unforgettable journey of exploration and excitement.</p>
+                <ul class="f-1 fw-400 lh-1-6 text-black-p ml-2 mb-1-5">
+                    <li>Unearth the charm of our sought-after tour, a portal to thrilling adventure and cultural immersion experiences.</li>
+                    <li>Navigate the core of our celebrated tour, meticulously fashioned for your pleasure and delightful engagement.</li>
+                    <li>Immerse yourself in a tapestry of diverse cultures, scenic wonders, and weave cherished memories throughout your enriching journey.</li>
+                </ul>
+                <p class="f-1 fw-400 lh-1-6 text-black-p mb-1-5">Delve into the heart of our acclaimed tour, meticulously designed for your enjoyment. Immerse yourself in diverse cultures, scenic wonders, and create cherished memories along the way. </p>
+                <button class="btn-primary f-1-1 mb-1-5">Read More</button>
+            </div>
+            <div class="tour-image">
+                <img src="Images/Rectangle 4.png" alt="">
+            </div>
 
+        </section>
     </Main>
 </body>
+
 </html>

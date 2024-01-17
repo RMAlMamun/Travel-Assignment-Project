@@ -1,86 +1,254 @@
-/* Header Section Details  */
-.text-primary {
-    color: #2a535a;
+
+
+:root {
+    --primary-color: #FF5400;
+    --text-white: #fff;
+    --text-black: #131318;
+    --text-black-2: #424247;
+    --text-black-p: rgba(19, 19, 24, 0.70);
+    --text-wheat: #5A5A5D;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    align-items: center;
-    margin: 0 50px 0 50px;
+/* Global Css */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
 }
 
-.nav-title {
-    color: #1A282E;
-    font-size: 35px;
+.text-black {
+    color: var(--text-black);
+}
+
+.text-black-2 {
+    color: var(--text-black-2);
+}
+
+.text-wheat {
+    color: var(--text-wheat);
+}
+
+.container {
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-black-2);
+}
+
+/* font-weight */
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-800 {
     font-weight: 800;
 }
 
-
-.nav-menu {
-    color: #1A282E;
-    font-size: 20px;
+.lh-1-6 {
+    line-height: 1.6rem;
 }
 
-.nav-menu:hover {
-    background-color: #2a535a;
-    padding: 5px 10px;
-    border-radius: 5px;
+/* font size  */
+
+.f-1-1 {
+    font-size: 1rem;
 }
 
-nav>ul {
+.f-1-2 {
+    font-size: 1.2rem;
+}
+
+.f-1-75 {
+    font-size: 1.75rem;
+}
+
+.f-2-5 {
+    font-size: 2.5rem;
+}
+
+.f-2-2 {
+    font-size: 2.6rem;
+}
+
+.f-2 {
+    font-size: 2rem;
+}
+
+.f-1 {
+    font-size: 1rem;
+}
+
+.f-1-5 {
+    font-size: 1.5rem;
+}
+
+.f-4 {
+    font-size: 3.5rem;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+.mb-1-5 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-1-5 {
+    margin-top: 1.5rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mb-2 {
+    margin-bottom: 2rem;
+}
+
+.primary-color {
+    color: var(--primary-color);
+}
+
+.text-black-p {
+    color: var(--text-black-p);
+}
+
+.text-white {
+    color: var(--text-white);
+}
+
+.flex-between-center {
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-nav li {
-    list-style: none;
-    margin-right: 20px;
+.text-center {
+    text-align: center;
 }
 
-nav a {
-    text-decoration: none;
+.m-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-primary {
+    padding: 1rem 1.9rem;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    border: none;
+    border-radius: 8px;
+    min-width: 174px;
+}
+
+/* header style  */
+.mobile-nav {
+    display: none;
+}
+
+.logo {
+    gap: 1rem;
+}
+
+.header-logo{
+    width: 65px;
+
+}
+
+nav ul li {
+    margin-left: 2.5rem;
+    list-style: none;
 }
 
 .banner {
-    background-image: linear-gradient(to bottom, rgba(19, 19, 24, 1), rgba(19, 19, 24, 0)), url('./Images/Group-13.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 1170px;
-    height: 500px;
-    flex-shrink: 0;
+    position: relative;
     border-radius: 16px;
-    margin: 0px auto;
-    display: flexbox;
 }
 
-.banner-text {
-    text-align: center;
-    padding-top: 50px;
-    color: white;
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-.banner-title {
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
+.banner-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 16px;
+    background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+    width: 100%;
+    height: 100%;
 }
 
-.banner-sub-title {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
+.banner>img {
+    border-radius: 16px;
 }
 
-.input-items {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 16px;
-    gap: 24px;
+.find-now-layer {
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
+    width: fit-content;
+    padding: 1rem;
+    margin: 0 auto;
+
+}
+
+.find-now {
+    min-width: 833px;
+}
+
+.banner-content p {
+    max-width: 676px;
+    margin: 1.5rem auto 3rem auto;
+}
+
+.find-now-layer input,
+.find-now-layer select {
+    padding: 15px 10px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 1.5rem;
+    width: 174px;
+}
+
+
+/* popular tour section */
+.tour-content {
+    max-width: 50%;
 }
