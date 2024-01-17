@@ -36,10 +36,153 @@
         object-fit: cover;
         min-height: 70vh;
     }
-    
+
     /* Popular tour section  */
     .popular-tour{
         flex-direction: column;
     }
 
-}
+    /* destination section  */
+    .grid-item h4 {
+        font-size: 1.2rem;
+    }
+    .destination-grid{
+        grid-template-areas: 
+        'item-1'
+        'item-2'
+        'item-3'
+        'item-4'
+        'item-5'
+        'item-6'
+        'item-7'
+        ;
+    }
+    .grid-item img {
+       height: 200px;
+       border-radius: 16px;
+       object-fit: fill ;
+    }
+    /* why us ssection 
+     */
+
+     .why-content {
+        grid-template-areas:
+            'card-1'
+            'card-2'
+            'card-3   '
+        ;
+    }
+
+    /* deals & discount section  */
+    .image-box img{
+        min-height: 60vh;
+        object-fit: cover;
+    }
+    .content-box{
+        padding: 1.25rem;
+        left:5%;
+    }
+    .content-box-2{
+        right:5%;
+    }
+    .content-box-description{
+        flex-direction: column;
+    }
+    
+    .mobile-margin-0{
+        margin-left: 0 !important;
+    }
+
+    /* perfect place section  */
+
+
+    .perfect-place{
+        flex-direction: column;
+    }
+    .perfect-video video{
+        width:90vw;
+        min-height: 257px;
+    }
+
+    /* newsletter section  */
+    .newsletter{
+        flex-direction: column ;
+    }
+    .f-1-5{
+        font-size: 1rem;
+    }
+    .f-2{
+        font-size: 1.2rem;
+    }
+    .news-absolute{
+        position: absolute;
+        bottom: 35px;
+    }
+    .f-2-5{
+        font-size: 1.5rem;
+    }
+    .news-content form button{
+        width: 102%;
+       
+    }
+    .f-2-2{
+        font-size: 1.6rem;
+    }
+    .tour-content{
+        max-width: 95%;
+    }
+    .review-card {
+        margin: 0 auto;
+    }
+
+} 
+
+
+
+
+@media screen and (max-width: 500px) and (min-width: 450px) {
+    .news-content form button{
+        width: 104%;
+       
+    }
+    .find-now-layer input{
+        width: 94%;
+    }
+  }
+@media screen and (max-width: 449px) and (min-width: 300px) {
+    .news-content form button{
+        width: 106%;
+       
+    }
+    .find-now-layer input{
+        width: 93%;
+    }
+  }
+
+  @media screen and (max-width: 1039px) and (min-width: 991px) {
+    .review-card {
+        max-width: 397px;
+    }
+    .news-content form input{
+        width: 92%;
+    }
+  }
+  @media screen and (max-width: 1299px) and (min-width: 1040px) {
+    .news-content form input{
+        width: 93%;
+    }
+  }
+  
+  @media screen and (max-width: 1400px) and (min-width: 1300px) {
+    .review-card {
+        max-width: 336px;
+    }
+    .news-content form input{
+        width: 94%;
+    }
+  }
+  @media screen and (max-width: 1500px) and (min-width: 1401px) {
+    .review-card {
+        max-width: 366px;
+    }
+  }
