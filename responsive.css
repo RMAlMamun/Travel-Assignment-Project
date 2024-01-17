@@ -42,6 +42,16 @@
         flex-direction: column;
     }
 
+/* Upcomming Section */
+
+.upcomming-event-container{
+    display:contents;
+    justify-content: center;
+}
+.event-box1, .event-box2, .event-box3{
+    margin: 20px auto;
+}
+
     /* destination section  */
     .grid-item h4 {
         font-size: 1.2rem;
